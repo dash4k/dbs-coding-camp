@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: .5rem 2rem;
+    position: sticky;
+    width: 100%;
+    height: auto;
+    top: 0;
+    
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+#desktop-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+#desktop-nav nav {
+    display: flex;
+    gap: 3rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Bungee', cursive;
+    color: black;
+    font-size: .8rem;
+}
+
+nav a.active {
+  background-color: black;
+  color: white;
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 400ms;
+}
+
+
+#desktop-nav img {
+    width: 1.8rem;
+}
+
+#nav-ext-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#hamburgerIcon img {
+    justify-self: start;
+    height: 25px;
+}
+
+#mobileNavBar {
+    display: none;
+    width: 100%;
+    height: 100dvh;
+    position: fixed;
+    left: 0;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    z-index: 1000;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    gap: 3rem;
+}
+
+section {
+    height: 30rem;
+    padding: .5rem 2rem;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Story Script', 'Arial';
+    font-size: 5rem
+}
+
+#home p {
+    font-family: 'Roboto', 'Arial';
+    font-size: 1rem;
+}
+
+#introduction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../imgs/section1.png");
+    background-position: center center;
+}
+
+#introduction div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    width: 95%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 1rem;
+
+    padding: .5rem 2rem;
+}
+
+#introduction aside img {
+    height: 15rem;
+    border-radius: .8rem;
+}
+
+#introduction article {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+h2 {
+    text-align: start;
+    font-family: 'Roboto', 'Arial';
+    font-size: 2rem;
+}
+
+#introduction p {
+    text-align: justify;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#projects-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#projects-wrap article {
+    border: 1px solid black;
+    border-radius: 5%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
+    padding-top: .5rem;
+}
+
+#projects-wrap article > img {
+    height: 8em;
+}
+
+#projects-wrap a {
+    text-decoration: none;
+}
+
+#projects-wrap div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#projects-wrap a > img {
+    height: 1.5em;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: .8rem;
+}
+
+h3 {
+    text-align: start;
+    font-family: 'Roboto', 'Arial';
+    font-size: .8rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    section {
+        height: 50rem;
+        padding: .5rem 2rem;
+    }
+
+    #introduction div, #projects-wrap {
+        display: flex;
+        flex-direction: column;
+    }    
+}
+
+@media screen and (min-width: 601px) {
+    #hamburgerMenu {
+        display: none;
+    }
+}

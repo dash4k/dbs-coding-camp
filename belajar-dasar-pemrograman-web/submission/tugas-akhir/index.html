@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap" rel="stylesheet">
+
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div id="desktop-nav">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#introduction">About</a>
+                <a href="#projects">Projects</a>
+            </nav>
+            
+            <div id="nav-ext-link">
+                <a href="https://www.github.com/dash4k" target="_blank" class="header-logo">
+                    <img src="assets/imgs/Logo4k.png" alt="logo dash4K">
+                </a>
+                <a href="https://www.dicoding.com/users/dash4k/academies" target="_blank" class="header-logo">
+                    <img src="assets/imgs/dicoding-header-logo.png" alt="logo dicoding">
+                </a>
+            </div>
+        </div>
+
+        <div id="hamburgerMenu">
+            <div id="hamburgerIcon" onclick="toggleMobileNav()">
+                <img src="assets/imgs/hamburger.png" alt="Hamburger Menu Icon">                
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <main>
+        <nav id="mobileNavBar">
+            <a class="mobileLink" href="#home">Home</a>
+            <a class="mobileLink" href="#introduction">About</a>
+            <a class="mobileLink" href="#projects">Projects</a>
+            <a class="mobileLink" href="https://www.github.com/dash4k">Github</a>
+            <a class="mobileLink" href="https://www.dicoding.com/users/dash4k/academies">Dicoding</a>
+        </nav>
+        
+        <section id="home">
+            <h1>Danishwara Pracheta</h1>
+            <p>Part-time comedian, full-time <span id="punchline">clown</span></p>
+        </section>
+
+        <section id="introduction">
+            <div>
+                <article>
+                    <h2>About</h2>
+                    <p>
+                        My name is Danishwara, but you can call me Dash.
+                        
+                        I'm currently studying Computer Science at Udayana University in Bali, Indonesia. I like programming in general, but for some time now I've started doing web programming, both front-end and back-end development. I also have a strong interest in game development, even though I'm nowhere near mastering it.
+    
+                        Outside the coding stuff, I also have an interest in cybersecurity and network engineering. Also, I like to do photography once in a while—I even created an Instagram page dedicated to showcasing my favorite shots (lol). If you have similar interests as me, feel free to hit me up!
+                    </p>
+                </article>
+                <aside>
+                    <img src="assets/imgs/profile.jpg" alt="profile picture">
+                </aside>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div id="projects-wrap">
+                <article>
+                    <h3>PSO & GWO Optimizer</h3>
+                    <img src="assets/imgs/project1.png" alt="project 1">
+                    <div>
+                            <a target="_blank" rel="noopener noreferrer" class="github" href="https://github.com/dash4k/python-pso-gwo-optimizer">
+                                <img src="assets/imgs/github.png" alt="github repo">
+                            </a>
+                            <a target="_blank" rel="noopener noreferrer" class="streamlit" href="https://python-pso-gwo-optimizer.streamlit.app/">
+                                <img src="assets/imgs/streamlit.png" alt="streamlit link">
+                            </a>
+                    </div>
+                </article>
+                
+                <article>
+                    <h3>SVM Spoken Digit Detection</h3>
+                    <img src="assets/imgs/project2.png" alt="project 2">
+                    <div>
+                            <a target="_blank" rel="noopener noreferrer" class="github" href="https://github.com/dash4k/svm-spoken-digit-detection">
+                                <img src="assets/imgs/github.png" alt="github repo">
+                            </a>
+                            <a target="_blank" rel="noopener noreferrer" class="streamlit" href="https://svm-mfcc-spoken-digit-detection.streamlit.app/">
+                                <img src="assets/imgs/streamlit.png" alt="streamlit link">
+                            </a>
+                    </div>
+                </article>
+                
+                <article>
+                    <h3>CNN Spoken Digit Detection</h3>
+                    <img src="assets/imgs/project3.png" alt="project 3">
+                    <div>
+                            <a target="_blank" rel="noopener noreferrer" class="github" href="https://github.com/dash4k/cnn-spoken-digit-detection">
+                                <img src="assets/imgs/github.png" alt="github repo">
+                            </a>
+                            <a target="_blank" rel="noopener noreferrer" class="streamlit" href="https://cnn-spoken-digit-detection.streamlit.app/">
+                                <img src="assets/imgs/streamlit.png" alt="streamlit link">
+                            </a>
+                    </div>
+                </article>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;dash4k</p>
+    </footer>
+</body>
+</html>
