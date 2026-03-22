@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    font-size: 16px;;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: .3rem;
+    margin-bottom: 1rem;
+    background-color: #283618;
+}
+
+h1 {
+    font-family: 'Bitcount Grid Double Ink', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: .5px #606c38 solid;
+    border-radius: 8px;
+    width: 40%;
+    padding: 1rem;
+}
+
+h2 {
+    color: #bc6c25;
+    font-family: 'Archivo Black', Courier, monospace;
+    font-weight: 200;
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+}
+
+#bookForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+#bookForm > div, #editForm > div{
+    display: flex;
+    flex-direction: column;
+}
+
+form button {
+    border: .5px #283618 solid;
+    background-color: #fefae0;
+    padding: .1rem .5rem;
+    font-weight: bold;
+}
+
+#searchBook {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: .5rem;
+}
+
+#searchBook input {
+    flex-grow: 2;
+}
+
+#searchBook button {
+    flex-grow: 1;
+}
+
+#incompleteBookList, #completeBookList {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-height: 30dvh;
+    overflow: auto;
+}
+
+#incompleteBookList > div, #completeBookList > div, #searchSection > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: .3rem;
+    width: 100%;
+    border: .5px #283618 solid;
+    border-radius: 6px;
+    padding: .5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.readButton {
+    background-color: rgb(12, 81, 12);
+    color: #fefae0;
+}
+
+.deleteButton {
+    background-color: rgb(107, 14, 14);
+    color: #fefae0;
+}
+
+.editButton {
+    background-color: rgb(115, 115, 17);
+    color: #fefae0;
+}
+
+.readButton, .deleteButton, .editButton {
+    padding: .2rem;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+#editForm {
+    width: 100%;
+    height: 100%;
+    padding: 10rem 20rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(254, 250, 224, 0.5);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+#editForm > div {
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+#searchSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    width: 100%;
+    padding: .5rem;
+}
